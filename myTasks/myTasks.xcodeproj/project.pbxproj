@@ -15,6 +15,8 @@
 		5727D461257152D200AB15CA /* myTasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5727D45F257152D200AB15CA /* myTasks.xcdatamodeld */; };
 		5727D46C257152D300AB15CA /* myTasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727D46B257152D300AB15CA /* myTasksTests.swift */; };
 		5727D477257152D300AB15CA /* myTasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727D476257152D300AB15CA /* myTasksUITests.swift */; };
+		5737A60E2573F6440050EBB4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737A60D2573F6440050EBB4 /* Task.swift */; };
+		5737A6172573FB680050EBB4 /* AddTaskEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737A6162573FB680050EBB4 /* AddTaskEventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5727D472257152D300AB15CA /* myTasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myTasksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5727D476257152D300AB15CA /* myTasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTasksUITests.swift; sourceTree = "<group>"; };
 		5727D478257152D300AB15CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5737A60D2573F6440050EBB4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5737A6162573FB680050EBB4 /* AddTaskEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskEventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 		5727D453257152D000AB15CA /* myTasks */ = {
 			isa = PBXGroup;
 			children = (
+				5737A6152573FB4E0050EBB4 /* ViewModels */,
+				5737A6122573F7760050EBB4 /* Views */,
+				5737A60C2573F60B0050EBB4 /* Models */,
 				5727D454257152D000AB15CA /* myTasksApp.swift */,
-				5727D456257152D000AB15CA /* ContentView.swift */,
 				5727D458257152D200AB15CA /* Assets.xcassets */,
 				5727D45D257152D200AB15CA /* Persistence.swift */,
 				5727D462257152D200AB15CA /* Info.plist */,
@@ -134,6 +140,30 @@
 				5727D478257152D300AB15CA /* Info.plist */,
 			);
 			path = myTasksUITests;
+			sourceTree = "<group>";
+		};
+		5737A60C2573F60B0050EBB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5737A60D2573F6440050EBB4 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5737A6122573F7760050EBB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5727D456257152D000AB15CA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5737A6152573FB4E0050EBB4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5737A6162573FB680050EBB4 /* AddTaskEventViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +297,8 @@
 			files = (
 				5727D461257152D200AB15CA /* myTasks.xcdatamodeld in Sources */,
 				5727D45E257152D200AB15CA /* Persistence.swift in Sources */,
+				5737A60E2573F6440050EBB4 /* Task.swift in Sources */,
+				5737A6172573FB680050EBB4 /* AddTaskEventViewModel.swift in Sources */,
 				5727D457257152D000AB15CA /* ContentView.swift in Sources */,
 				5727D455257152D000AB15CA /* myTasksApp.swift in Sources */,
 			);
