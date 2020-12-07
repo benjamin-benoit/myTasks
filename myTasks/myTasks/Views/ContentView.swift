@@ -21,7 +21,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(tasks) { task in
-                    Text(task.title)
+//                    Text(task.title)
                 }
                 .onDelete(perform: onDelete)
                 .onMove(perform: onMove)
