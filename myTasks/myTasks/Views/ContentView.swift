@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @State private var tasks: [Task] = []
     private static var count = 0
+    @State var showTaskSheet = false
 
     var body: some View {
         NavigationView {
@@ -25,10 +26,14 @@ struct ContentView: View {
                 .onDelete(perform: onDelete)
                 .onMove(perform: onMove)
             }
-            .navigationBarTitle("List")
+            .navigationBarTitle("Tâches")
             .navigationBarItems(leading: EditButton(), trailing: addButton)
             .environment(\.editMode, $editMode)
+            .sheet(isPresented: $showTaskSheet, content: {
+                AddTask()
+            })
         }
+        
     }
         
     private var addButton: some View {
@@ -41,8 +46,9 @@ struct ContentView: View {
     }
     
     func onAdd() {
-        tasks.append(Task(title: "Item #\(Self.count)"))
-        Self.count += 1
+//        tasks.append(Task(title: "Item #\(Self.count)"))
+//        Self.count += 1
+        showTaskSheet = true
     }
     
     private func onDelete(offsets: IndexSet) {
